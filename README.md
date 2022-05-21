@@ -1,2 +1,2 @@
-# Web-Developing-WIP
-my wierd web developing
+# Web Playground
+ PLANING (ON GOING)
