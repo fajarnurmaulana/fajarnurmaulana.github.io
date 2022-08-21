@@ -10,32 +10,29 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="hamburger">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="brand">
+    <!-- Navbar Section -->
+    <header class="header">
+        <a href="/" class="logo">Fajar Nur Maulana</a>
+        <nav class="navbar">
+            <ul class="primary__list">
+                <li><a href="" class="nav__link">Home</a></li>
+                <li><a href="" class="nav__link">About</a></li>
+                <li><a href="" class="nav__link">Contact</a></li>
+            </ul>
+            <ul class="secondary__list">
+                <div class="btn btn--primary" onclick="darkToggle">Dark Mode</div>
+            </ul>
+        </nav>
+    </header>
+    <!-- Navbar End -->
 
-            Fajar Nur Maulana
-        </div>
-        <div class="navlink">
-            <a href="">Home</a>
-            <a href="">My Project</a>
-            <a href="">Portofolio</a>
-            <a href="">About</a>
-        </div>
-        <div class="navlink--social">
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-        </div>
+    <!-- Hero Section -->
+    <div class="container hero">
+        <h1 class="hero__title">Welcome To My Portofolio Webpages</h1>
+        <p class="hero__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ut beatae quo voluptas vero error eos dolore quod. Labore, temporibus.</p>
+        <div class="btn btn--primary">Check My CV !</div>
     </div>
-    <div class="hero">
-        <h1>Selamat Datang Di Portofolio Fajar</h1>
-    </div>
+    <!-- Hero Section End -->
 
     <!-- Javascript -->
     <script src="/res/script.js"></script>
