@@ -5,8 +5,61 @@
   list-style-type: none;
   text-decoration: none;
 }
+a{
+  color: whitesmoke;
+}
+img{
+  width: 100%;
+}
 body{
-  background-color: #4D4C7D;
+  background-color: #7e7db5;
   overflow: hidden;
 }
+.container{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 .75rem;
+}
+.row{
+  display: flex;
+}
+.header{
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  height: 4rem;
+  background-color: #4D4C7D;
+  color: whitesmoke;
+}
+.navbar{
+  flex-grow: 1;
+  align-items: center;
+}
+.nav__link{
+  color: whitesmoke;
+  position: relative;
+  padding: 15px 16px;
+  margin: 0 .1rem;
+  font-size: 20px;
+  font-weight: 700;
 
+}
+.primary__list{
+  margin: 0 auto;
+}
+.secondary__list{
+  margin-left: 0;
+}
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(/assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero__title{
+  font-size: large;
+}
