@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <title>Portofolio Fajar</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/res/style.css">
-    </head>
-
-    <body>
-        <!-- Navbar Section -->
-        <header class="header row">
-            <a href="/" class="logo">Fajar Nur Maulana</a>
-            <nav class="navbar row">
-                <ul class="primary__list row">
-                    <li>
-                        <a href="" class="nav__link">Home</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav__link">About</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav__link">Contact</a>
-                    </li>
-                </ul>
-                <ul class="secondary__list row">
-                    <div class="btn btn--primary" onclick="darkToggle">Dark Mode</div>
-                </ul>
-            </nav>
-        </header>
-        <!-- Navbar End -->
-
-        <!-- Hero Section -->
-        <div class="hero">
-            <div class="container">
-                <h1 class="hero__title">Welcome To My Portofolio Webpages</h1>
-                <p class="hero__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ut beatae quo voluptas vero error eos dolore quod. Labore, temporibus.</p>
-                <div class="btn btn--primary">Check My CV !</div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Fajar Nur Maulana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fajar Nur Maulana</title>
+    <link rel="stylesheet" href="res/style.css" />
+  </head>
+  <body>
+    <header class="header row">
+      <a href="/" class="logo">Fajar Nur Maulana</a>
+      <nav class="navbar row">
+        <div class="primary__list">
+          <a href="" class="navbar__link">Home</a>
+          <a href="" class="navbar__link">My Project</a>
+          <a href="" class="navbar__link">My CV</a>
+          <a href="" class="navbar__link">Contact</a>
         </div>
-        <!-- Hero Section End -->
+      </nav>
+      <div class="hamburger" onclick="menuToggle()">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </div>
+    </header>
+    
+      <div class="hero">
+        <h1 class="hero__title">I'am Fajar Nur Maulana</h1>
+        <p class="hero__description">
+          I'am 19 Years Old,I'am Learning HTML,CSS,JS
+        </p>
+        <button class="btn btn--primary">My CV</button>
+      </div>
+      
+      <div class="myskill">
+        <div class="myskill__top">
+          <h3>MY SKILL</h3>
+          <p>Skill Yang Saya Pelajari Beserta Detailnya</p>
+        </div>
+        <div class="grid-wrapper">
+          <div class="card">
+            <img class="card__images" src="/assets/html_logo.png" alt="" />
+            <div class="card__content">
+              <h2 class="card__title">HTML</h2>
+              <p class="card__description">
+                HTML adalah Hyper Text Markup Languange,HTML bukan bahasa
+                pemrograman namun di gunakan untuk membuat suatu website.
+              </p>
+              <a class="btn btn--primary">Pelajari HTML</a>
+            </div>
+          </div>
+                    <div class="card">
+            <img class="card__images" src="/assets/css_logo.png" alt="" />
+            <div class="card__content">
+              <h2 class="card__title">CSS</h2>
+              <p class="card__description">
+                CCS merupakan singkatan dari Cascading Stylesheet Yang Fungsinya Seperti Baju Untuk HTML saya mempelajari CSS bersamaan dengan HTML.
+              </p>
+              <a class="btn btn--primary">Pelajari HTML</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__images" src="/assets/js_logo.png" alt="" />
+            <div class="card__content">
+              <h2 class="card__title">JavaScript</h2>
+              <p class="card__description">
+                Javascript merupakan bahasa pemrograman yang banyak di gunakan untuk membuat website menjadi lebih interactive,saya belum terlalu mahir dalam javascript.
+              </p>
+              <a class="btn btn--primary">Pelajari HTML</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Javascript -->
-        <script src="/res/script.js"></script>
-        <script src="https://kit.fontawesome.com/7683ce31cb.js" crossorigin="anonymous"></script>
-    </body>
-
+    <script
+      src="/res/script.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </body>
 </html>
