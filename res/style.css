@@ -258,7 +258,7 @@ My Skill End
   padding: var(--pd-1);
   text-align: center;
   height: 100%;
-  width: 45px;
+  width: 100%;
   color: whitesmoke;
   font-weight: 800;
 }
