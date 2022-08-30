@@ -133,6 +133,10 @@ Header Block
   left: 0;
   right: 0;
   z-index: 99;
+  transition: 300ms ease-in;
+}
+.scroll{
+  background-color: var(--color-100);
 }
 .logo{
   font-weight: 800;
@@ -159,6 +163,7 @@ Header Block
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  position: relative;
   height: 100%;
   width: 45px;
 }
@@ -253,7 +258,7 @@ My Skill End
   padding: var(--pd-1);
   text-align: center;
   height: 100%;
-  width: 100%;
+  width: 45px;
   color: whitesmoke;
   font-weight: 800;
 }
@@ -261,6 +266,36 @@ My Skill End
   height: 5px;
   width: 100%;
   background-color: whitesmoke;
+  display: block;
+  transition: 300ms all;
+}
+.hamburger:nth-child(2){
+ transform-origin: 0 0;
+}
+.hamburger:nth-child(4){
+  transform-origin: 0 100%;
+}
+
+.hamburger input:checked ~ span:nth-child(2){
+  position: absolute;
+  transform: rotate(45deg) translate(-1px,-1px);
+}
+.hamburger input:checked ~ span:nth-child(3){
+  height: 0;
+  width: 0;
+  z-index: -3;
+}
+.hamburger input:checked ~ span:nth-child(4){
+  position: absolute;
+  transform: rotate(-45deg) translate(0,0);
+}
+
+.hamburger__check{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
 }
 .card__images{
   background-color: whitesmoke;
