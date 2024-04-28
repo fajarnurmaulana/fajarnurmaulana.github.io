@@ -1,9 +1,10 @@
-root,html {
+*,html {
   padding: 0;
   margin: 0;
   list-style-type: none;
   background-color: #BAD7E9;
 }
-h1 {
-  font-family: 'Pacifico';
+
+body {
+    font-family: 'Pacifico';font-size: 22px;
 }
